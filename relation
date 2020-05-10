@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="math.css" />
+		<style>body {font-family: "STIX Two Text", 源ノ明朝;}</style>
+		<title>関係</title>
+	</head>
+	<body>
+		<h1>関係</h1>
+		<h2>関係</h2>
+		<p>ここでは、 × は直積を表す。順序組 <i>a</i> の第 <i>i</i> 項を <i>a</i><sub><i>i</i></sub> と表す。</p>
+		<p><i>n</i> ∈ ℤ<sub>≧ 0</sub> とする。</p>
+		<p><i>n</i> は任意の非負整数を表し、字は本質的にはなんでもよい。非負整数であるため <i>n</i> が用いられることが多いが、例えば、 <i>n</i> のかわりに <i>k</i> が用いられることもある。</p>
+		<dl>
+			<dt>定義　 <i>n</i> 項関係 (1)</dt>
+			<dt><i>n</i> 項関係、 <i>n</i>-ary relation, <i>n</i>-adic relation, <i>n</i>-dimensional relation, <i>n</i>-place relation</dt>
+			<dd> <i>X</i> を順序 <i>n</i> + 1 組とする。 <i>X</i><sub>1</sub>, <i>X</i><sub>2</sub>, <i>X</i><sub>3</sub>, ……, <i>X</i><sub><i>n</i></sub>, <i>X</i><sub><i>n</i> + 1</sub> を集合とする。 <i>X</i><sub><i>n</i> + 1</sub> ⊆ <i>X</i><sub>1</sub> × <i>X</i><sub>2</sub> × <i>X</i><sub>3</sub> × …… × <i>X</i><sub><i>n</i></sub> とする。このとき、 <i>X</i> を <i>n</i> 項関係という。</dd>
+		</dl>
+		<p>集合論の公理系によっては、 <i>X</i><sub>1</sub>, <i>X</i><sub>2</sub>, <i>X</i><sub>3</sub>, ……, <i>X</i><sub><i>n</i></sub>, <i>X</i><sub><i>n</i> + 1</sub> を類とすることもできる。</p>
+		<p><i>n</i> 項関係と似たものに、 <i>n</i> 項述語がある。 <i>n</i> 項述語はそれ自体が述語論理における述語であるのに対し、 <i>n</i> 項関係は集合論の上で集合（や類）として定められ、 apply relation とでもいうべき 2 項述語を用いて述語となる。 <i>n</i> 項関係は <i>n</i> 個の項を順序 <i>n</i> 組として 1 つにまとめて扱うため、 1 項述語に似ているともいえる。 <i>n</i> 項述語は合成や逆を考えるのが難しい（メタ論理になる？高階？）のに対し、 <i>n</i> 項関係では合成や逆を集合論の枠組みの中で集合（の 1 種である関係（の 1 種である写像））として扱うことができる。</p>
+		<p><i>n</i> 項関係は、 <i>X</i><sub>1</sub>, <i>X</i><sub>2</sub>, <i>X</i><sub>3</sub>, ……, <i>X</i><sub><i>n</i></sub> とその順番と、 <i>X</i><sub><i>n</i> + 1</sub> により定まる。これらの情報をまとめるのに順序組を用いることは本質的には意味がない。ただ、集合論による基礎づけのため、便宜的に順序組で表すと考えられる。</p>
+		<p>指示関数（真理値を出力する写像）</p>
+		<dl>
+			<dt>定義　<i>n</i> 項関係の項数</dt>
+			<dt>項数、アリティ、 arity, place, rank, adicity, dimension</dt>
+			<dd><i>n</i> 項関係 <i>X</i> について、 <i>n</i> を <i>X</i> の項数という。</dd>
+		</dl>
+		<p><i>X</i> の（順序組としての）長さ = <i>X</i> の（<i>n</i> 項関係のとしての）項数 + 1 となる。</p>
+		<dl>
+			<dt>定義　グラフ</dt>
+			<dt>グラフ、 graph</dt>
+			<dd><i>n</i> 項関係 <i>X</i> について、 <i>X</i><sub><i>n</i> + 1</sub> を <i>X</i> のグラフという。</dd>
+			<dd><i>n</i> 項関係 <i>X</i> のグラフを <i>G</i> <i>X</i> と表す。</dd>
+		</dl>
+		<p>この記法は一般的ではないかもしれない。</p>
+		<dl>
+			<dt>定義　satisfy</dt>
+			<dt><i>y</i> satisfies <i>X</i>, <i>y</i> is in the relation <i>X</i></dt>
+			<dd><i>n</i> 項関係 <i>X</i> と順序 <i>n</i> 組 <i>y</i> について、 <i>y</i> ∈ <i>G</i> <i>X</i> となることを、 <i>y</i> satisfies <i>X</i> という。</dd>
+			<dd><i>n</i> 項関係 <i>X</i> と順序 <i>n</i> 組 <i>y</i> について、 <i>y</i> satisfies <i>X</i> であることを、 <i>X</i> <i>y</i> と表す。</dd>
+		</dl>
+		<p>これは、述語記号 Apply があり、Apply <i>X</i> <i>y</i> の Apply が書かれていないと考えることができる。</p>
+		<p>項を並べて、 <i>X</i> <i>y</i><sub>1</sub> <i>y</i><sub>2</sub> <i>y</i><sub>3</sub> …… <i>y</i><sub><i>n</i></sub> とも表す。</p>
+		<dl>
+			<dt>定義　域</dt>
+			<dt>域、領域、 domain</dt>
+			<dd><i>n</i> 項関係 <i>X</i> について、 <i>X</i><sub>1</sub>, <i>X</i><sub>2</sub>, <i>X</i><sub>3</sub>, ……, <i>X</i><sub><i>n</i></sub> を <i>X</i> の域という。</dd>
+		</dl>
+		<dl>
+			<dt>定義　域上の <i>n</i> 項関係 (1)</dt>
+			<dt>上の、 over</dt>
+			<dd><i>n</i> 項関係 <i>X</i> を、 <i>X</i><sub>1</sub>, <i>X</i><sub>2</sub>, <i>X</i><sub>3</sub>, ……, <i>X</i><sub><i>n</i></sub> 上の <i>n</i> 項関係という。</dd>
+		</dl>
+		<dl>
+			<dt>定義　<i>n</i> 項関係 (2)</dt>
+			<dd><i>n</i> ∈ ℤ<sub>&gt; 0</sub> とする。集合 <i>X</i> について、 ∀<i>y</i> ∈ <i>X</i>. (<i>y</i> が順序 <i>n</i> 組である) となるとき、 <i>X</i> を <i>n</i> 項関係という。</dd>
+		</dl>
+		<p>1 つ目の定義では <i>n</i> 項関係から domain が一意に定まるが、 2 つ目の定義では <i>n</i> 項関係から domain が一意に定まらない。</p>
+		<h3>一般化</h3>
+		<dl>
+			<dt>定義　関係</dt>
+			<dt>関係、多項関係、 finite-place relation, finitary relation, relation</dt>
+			<dd><i>n</i> ∈ ℤ<sub>≧ 0</sub> とする。 <i>n</i> 項関係 を関係という。</dd>
+		</dl>
+		<p>有限項関係とでもいうべきものだが、一般には多項関係や関係といわれる（<a href="https://2ch.review/cache/view/hobby/1306520063">https://2ch.review/cache/view/hobby/1306520063</a>）。</p>
+		<dl>
+			<dt>定義　infinitary relation</dt>
+			<dt>infinitary relation</dt>
+			<dd><i>n</i> 項関係の項数を無限に一般化した無限項関係とでもいうべきものを考えることがある。</dd>
+		</dl>
+		<h3>特化</h3>
+		<dl>
+			<dt>定義　homogeneous relation</dt>
+			<dt>自己関係、 endorelation, homogeneous relation</dt>
+			<dd><i>n</i> ∈ ℤ<sub>≧ 0</sub> とする。 <i>n</i> 項関係 <i>X</i> について、 <i>X</i><sub>1</sub> = <i>X</i><sub>2</sub> = <i>X</i><sub>3</sub> = …… = <i>X</i><sub><i>n</i></sub> となるとき、 <i>X</i> を、 homogeneous relation という。</dd>
+		</dl>
+		<p>2 項関係では homogeneous relation の対義語は heterogeneous relation となる。</p>
+		<dl>
+			<dt>定義　域上の <i>n</i> 項関係 (2)</dt>
+			<dt>上の、 over</dt>
+			<dd><i>n</i> ∈ ℤ<sub>≧ 0</sub> とする。 <i>n</i> 項関係 <i>X</i> について、 <i>X</i> が
+			 homogeneous relation となるとき、 <i>X</i> を <i>X</i><sub>1</sub> 上の <i>n</i> 項関係という。</dd>
+		</dl>
+		
+		<p><i>n</i> 項関係は具体的には 0 項関係、 1 項関係（単項関係、性質、unary relation, property）、 2 項関係（binary relation, dyadic relation）、 3 項関係（ternary relation, triadic relation）、 4 項関係（quaternary relation）……のようになる。</p>
+		<h3>メモ</h3>
+		<a href="https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%AA%E3%83%86%E3%82%A3">https://ja.wikipedia.org/wiki/アリティ</a>
+		<a href="https://en.wikipedia.org/wiki/Finitary_relation">https://en.wikipedia.org/wiki/Finitary_relation</a>
+		<a href="https://ja.wikipedia.org/wiki/%E5%AE%9A%E7%BE%A9%E5%9F%9F">https://ja.wikipedia.org/wiki/定義域</a>
+		<h3>二項関係</h3>
+		<p><i>n</i> 項関係のうち、 <i>n</i> = 2 のときの 2 項関係が特によく用いられる。写像や関数の定義にも二項関係が用いられる。</p>
+		<dl>
+			<dt>定義　始域</dt>
+			<dt>始域、始集合、域、領域、 domain</dt>
+			<dd>2 項関係 <i>X</i> について、 <i>X</i><sub>1</sub> を <i>X</i> の始域という。</dd>
+			<dt>定義　終域</dt>
+			<dt>終域、終集合、余域、 codomain</dt>
+			<dd>2 項関係 <i>X</i> について、 <i>X</i><sub>2</sub> を <i>X</i> の終域という。</dd>
+		</dl>
+		<dl>
+			<dt>定義　関係を持つ</dt>
+			<dt><i>x</i> は <i>y</i> と <i>R</i>-関係を持つ</dt>
+			<dd>2 項関係 <i>R</i> と <i>x</i>, <i>y</i> について、(<i>x</i>, <i>y</i>) ∈ <i>G</i> <i>R</i> となることを、 <i>y</i> は <i>z</i> と <i>X</i>-関係を持つという。</dd>
+			<dd>2 項関係 <i>R</i> と <i>x</i>, <i>y</i> について、 <i>x</i> は <i>y</i> と <i>R</i>-関係を持つことを、 <i>x</i> <i>R</i> <i>y</i> と表す。</dd>
+		</dl>
+		<h4>二項関係の分類</h4>
+		<dl>
+			<dt>定義　左一意的</dt>
+			<dt>左一意的、単射、単写、 left-unique, injection, injective</dt>
+			<dd>2 項関係 <i>R</i> について、 ∀<i>x</i>. ∀<i>y</i>. ∀<i>z</i>. (<i>x</i> <i>R</i> <i>y</i> ∧ <i>z</i> <i>R</i> <i>y</i> → <i>x</i> = <i>z</i>) となるとき、左一意的という。</dd>
+			<dt>定義　右一意的</dt>
+			<dt>右一意的、函数的、部分写像、 right-unique, injection, functional</dt>
+			<dd>2 項関係 <i>R</i> について、 ∀<i>x</i>. ∀<i>y</i>. ∀<i>z</i>. (<i>x</i> <i>R</i> <i>y</i> ∧ <i>x</i> <i>R</i> <i>z</i> → <i>y</i> = <i>z</i>) となるとき、右一意的という。</dd>
+			<dt>定義　一対一</dt>
+			<dt>一対一、 one-to-one</dt>
+			<dd>2 項関係 <i>R</i> について、左一意的かつ右一意的のとき、一対一という。</dd>
+		</dl>
+		<dl>
+			<dt>定義　左全域的</dt>
+			<dt>左全域的、全域的、 left-total, total</dt>
+			<dd>2 項関係 <i>R</i> について、 ∀<i>x</i>. ∃<i>y</i>. (<i>x</i> <i>R</i> <i>y</i>) となるとき、左全域的という。</dd>
+			<dt>定義　右全域的</dt>
+			<dt>右全域的、全射、上へ、 right-total, surjective, surjection, onto</dt>
+			<dd>2 項関係 <i>R</i> について、 ∀<i>y</i>. ∃<i>x</i>. (<i>x</i> <i>R</i> <i>y</i>) となるとき、右全域的という。</dd>
+			<dt>定義　対応</dt>
+			<dt>対応、 correspondence</dt>
+			<dd>2 項関係 <i>R</i> について、左全域的かつ右全域的のとき、対応という。</dd>
+		</dl>
+		<p>二項関係を対応ということもある。</p>
+		<dl>
+			<dt>定義　函数関係</dt>
+			<dt>函数関係、一意対応、函数、写像、function</dt>
+			<dd>2 項関係 <i>R</i> について、 右一意的かつ左全域的のとき、函数関係という。</dd>
+			<dt>定義　全単射</dt>
+			<dt>全単射、双射、 bijection</dt>
+			<dd>2 項関係 <i>R</i> について、左一意的かつ右一意的かつ左全域的かつ右全域的のとき、全単射という。</dd>
+		</dl>
+	</body>
+</html>

@@ -1,0 +1,16 @@
+/* 基本のフォント */
+body {font-family: "STIX Two Text", "Source Han Serif";}
+math {font-family: "STIX Two Math";}
+/* 太字、サンセリフのフォント */
+/* 用語の強調はbを用い、em、strong、markは用いない、定義dfnや略語attrはどうする？ */
+/* 変数のイタリックはiまたはvarを用いる。varの方がより適切。 */
+h1, h2, h3, h4, h5, h6, dt, b {font-family: "STIX Two Text", "Source Han Sans";}
+h1, h2, h3, h4, h5, h6 {font-weight: normal;}
+/* 見出し等の背景色 */
+h1, h2, h3, h4, h5, h6 {background-color: #eeeeee;}
+dl {background-color: #dddddd;}
+dt {background-color: #cccccc;}
+
+/* 基本使用タグ：html, head, body, script, style, link, titie, meta */
+/* 本文使用タグ：h1, h2, h3, h4, h5, h6, p, dl, dt, dd, li, ul, ol */
+/* 本文使用タグ：span, i, var, b, dfn */

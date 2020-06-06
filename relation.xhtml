@@ -72,10 +72,11 @@
 		</dl>
 		<h3>特化</h3>
 		<dl>
-			<dt>定義　homogeneous relation</dt>
+			<dt>定義　自己関係</dt>
 			<dt>自己関係、 endorelation, homogeneous relation</dt>
-			<dd><i>n</i> ∈ ℤ<sub>≧ 0</sub> とする。 <i>n</i> 項関係 <i>X</i> について、 <i>X</i><sub>1</sub> = <i>X</i><sub>2</sub> = <i>X</i><sub>3</sub> = …… = <i>X</i><sub><i>n</i></sub> となるとき、 <i>X</i> を、 homogeneous relation という。</dd>
+			<dd><i>n</i> ∈ ℤ<sub>≧ 0</sub> とする。 <i>n</i> 項関係 <i>X</i> について、 <i>X</i><sub>1</sub> = <i>X</i><sub>2</sub> = <i>X</i><sub>3</sub> = …… = <i>X</i><sub><i>n</i></sub> となるとき、 <i>X</i> を自己関係という。</dd>
 		</dl>
+		<p><i>X</i><sub>1</sub> 上の自己関係全体の集合を 2<sup><i>X</i><sub>1</sub> × <i>X</i><sub>1</sub></sup> や ℬ (<i>X</i><sub>1</sub>) と表す。</p>
 		<p>2 項関係では homogeneous relation の対義語は heterogeneous relation となる。</p>
 		<dl>
 			<dt>定義　域上の <i>n</i> 項関係 (2)</dt>
@@ -111,15 +112,15 @@
 			<dt>左一意的、単射、単写、 left-unique, injection, injective</dt>
 			<dd>2 項関係 <i>R</i> について、 ∀<i>x</i>. ∀<i>y</i>. ∀<i>z</i>. (<i>x</i> <i>R</i> <i>y</i> ∧ <i>z</i> <i>R</i> <i>y</i> → <i>x</i> = <i>z</i>) となるとき、左一意的という。</dd>
 			<dt>定義　右一意的</dt>
-			<dt>右一意的、函数的、部分写像、 right-unique, injection, functional</dt>
+			<dt>右一意的、函数的、部分写像、 right-unique, right-definite, univalent, injection, functional, partial function</dt>
 			<dd>2 項関係 <i>R</i> について、 ∀<i>x</i>. ∀<i>y</i>. ∀<i>z</i>. (<i>x</i> <i>R</i> <i>y</i> ∧ <i>x</i> <i>R</i> <i>z</i> → <i>y</i> = <i>z</i>) となるとき、右一意的という。</dd>
 			<dt>定義　一対一</dt>
-			<dt>一対一、 one-to-one</dt>
+			<dt>一対一、 one-to-one, 1-to-1</dt>
 			<dd>2 項関係 <i>R</i> について、左一意的かつ右一意的のとき、一対一という。</dd>
 		</dl>
 		<dl>
 			<dt>定義　左全域的</dt>
-			<dt>左全域的、全域的、 left-total, total</dt>
+			<dt>左全域的、全域的、 left-total, total, serial</dt>
 			<dd>2 項関係 <i>R</i> について、 ∀<i>x</i>. ∃<i>y</i>. (<i>x</i> <i>R</i> <i>y</i>) となるとき、左全域的という。</dd>
 			<dt>定義　右全域的</dt>
 			<dt>右全域的、全射、上へ、 right-total, surjective, surjection, onto</dt>
@@ -136,6 +137,18 @@
 			<dt>定義　全単射</dt>
 			<dt>全単射、双射、 bijection</dt>
 			<dd>2 項関係 <i>R</i> について、左一意的かつ右一意的かつ左全域的かつ右全域的のとき、全単射という。</dd>
+		</dl>
+		<h4>二項関係の自己関係の分類</h4>
+		<dl>
+			<dt>定義　反射的</dt>
+			<dt>反射的、反射性、反射関係、 reflexivity, reflexive relation, totally reflexive</dt>
+			<dd>2 項関係 <i>R</i> について、 ∀<i>x</i>. <i>x</i> <i>R</i> <i>x</i>となるとき、反射的という。</dd>
+			<dt>定義　quasi-reflexive</dt>
+			<dt>quasi-reflexive, reflexive</dt>
+			<dd>2 項関係 <i>R</i> について、 ∀<i>x</i>. (∃<i>y</i>. (<i>x</i> <i>R</i> <i>y</i> ∨ <i>y</i> <i>R</i> <i>x</i>) → <i>x</i> <i>R</i> <i>x</i>)となるとき、反射的という。</dd>
+			<dt>定義　非反射的</dt>
+			<dt>非反射的、非反射性、 irreflexivity</dt>
+			<dd>2 項関係 <i>R</i> について、 ∀<i>x</i>. ¬ <i>x</i> <i>R</i> <i>x</i>となるとき、反射的という。</dd>
 		</dl>
 	</body>
 </html>
